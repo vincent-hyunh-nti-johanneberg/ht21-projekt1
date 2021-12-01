@@ -1,0 +1,24 @@
+#wrapper {
+    display: grid; 
+    border: solid black 1px;
+    width: 90%;
+    height: 90vh;
+    margin: auto; 
+    grid-template-areas: 
+    'hd hd nv'
+    
+    
+    ;
+}
+
+#header {
+    grid-area: hd;
+    border: solid black 1px;
+
+}
+
+#navigator {
+    grid-area: nv; 
+    border: solid black 1px;
+}
+
