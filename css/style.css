@@ -1,4 +1,5 @@
 #wrapper {
+    background-color: khaki;
     display: grid; 
     border: solid black 1px;
     width: 90%;
@@ -6,7 +7,7 @@
     margin: auto; 
     grid-template-areas: 
     'hd hd nv'
-    
+    's1 s1 s1'
     
     ;
 }
@@ -14,11 +15,20 @@
 #header {
     grid-area: hd;
     border: solid black 1px;
-
+    height: 5vh;
+    
 }
 
 #navigator {
     grid-area: nv; 
     border: solid black 1px;
+    height: 5vh;
+
+}
+
+#sect1 {
+    grid-area: s1; 
+    border: solid black 1px;
+
 }
 
