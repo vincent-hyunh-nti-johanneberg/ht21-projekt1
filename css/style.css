@@ -13,10 +13,12 @@
     ;
 }
 
+
 #header {
     grid-area: hd;
     border: solid black 1px;
     height: 5vh;
+    width: 50%;
     
 }
 
@@ -24,49 +26,52 @@
     grid-area: nv; 
     border: solid black 1px;
     height: 5vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
 
 }
 
 #sect1 {
     grid-area: s1; 
     border: solid black 1px;
+    width: 60%;
+    height: 15vh;
 
 }
 
 #sect2 {
+    border: solid black 1px;
     grid-area:s2;
     display:grid; 
     grid-template-areas: 
-    'a1 a1 a1'
     'a2 a3 a4';
-
-
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
+
+
 #art1 {
-    grid-area: a1; 
-    border: solid 1px black; 
-    width: 100%;
-    height: 5vh;
-    margin-top: 10%;
+    grid-area: a2;
+    border: solid black 1px;
+    width: 30%;
+
 
 }
 
 #art2 {
-    grid-area: a2;
+    grid-area: a3;  
     border: solid black 1px;
-    margin-bottom: 10%;
+    width: 30%;
 
 }
 
 #art3 {
-    grid-area: a3;  
-    border: solid black 1px;
-    margin-bottom: 10%;
-}
-
-#art4 {
     grid-area: a4;
     border: solid black 1px; 
-    margin-bottom: 10%;
+    width: 30%;
 }
