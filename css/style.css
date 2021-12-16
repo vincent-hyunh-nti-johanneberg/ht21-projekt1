@@ -3,12 +3,12 @@
     display: grid; 
     border: solid black 1px;
     width: 90%;
-    height: 90vh;
+    height: 110vh;
     margin: auto; 
     grid-template-areas: 
-    'hd hd ul'
-    's1 s1 ul'
-    's2 s2 s2'
+    'hd nv'
+    's1 s1'
+    's2 s2'
     
     ;
 }
@@ -21,16 +21,42 @@
     width: 50%;
     
 }
+
+nav {
+    grid-area: nv;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 3%; 
+    padding-right: 3%;
+    
+}
+
+
 ul {
-    grid-area: ul;
+    grid-area: ul; 
     list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden; 
+    background-color: #333; 
+    height: 23%;
 }
 
 li {
-    display: inline-block;
+    float: left; 
+}
+
+li a {
+    display: block; 
+    color: white; 
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
 
+}
 
+li a:hover {
+    background-color: #111; 
 }
 
 #sect1 {
@@ -46,9 +72,11 @@ li {
     grid-area:s2;
     display:grid; 
     grid-template-areas: 
-    'a2 a3 a4';
+    'a1 a2 a3'
+    'a4 a4 a4';
     display: flex;
     justify-content: space-around;
+    
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -57,7 +85,7 @@ li {
 
 #art1 {
     background-color: red;
-    grid-area: a2;
+    grid-area: a1;
     border: solid black 1px;
     width: 30%;
 
@@ -66,7 +94,7 @@ li {
 
 #art2 {
     background-color: green;
-    grid-area: a3;  
+    grid-area: a2;  
     border: solid black 1px;
     width: 30%;
 
@@ -74,8 +102,9 @@ li {
 
 #art3 {
     background-color: blue;
-    grid-area: a4;
+    grid-area: a3;
     border: solid black 1px; 
     width: 30%;
 }
+
 
