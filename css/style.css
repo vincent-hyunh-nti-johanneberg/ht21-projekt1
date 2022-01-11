@@ -6,21 +6,13 @@
     height: 110vh;
     margin: auto; 
     grid-template-areas: 
-    'hd nv'
+    'nv nv'
     's1 s1'
     's2 s2'
     
     ;
 }
 
-
-#header {
-    grid-area: hd;
-    border: solid black 1px;
-    height: 5vh;
-    width: 50%;
-    
-}
 
 nav {
     grid-area: nv;
