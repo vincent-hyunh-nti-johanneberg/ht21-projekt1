@@ -5,7 +5,7 @@
     width: 90%;
     height: 110vh;
     margin: auto; 
-    grid-template-rows: 0.8fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas: 
     'nv nv'
     'mn mn'
@@ -18,7 +18,7 @@ main {
     grid-area: mn;
     display: flex;
     justify-content: center; 
-
+    
 }
 
 nav {
@@ -38,7 +38,7 @@ ul {
     padding: 0;
     overflow: hidden; 
     background-color: #333; 
-    height: 20%;
+    height: 25%;
 }
 
 li {
@@ -58,12 +58,7 @@ li a:hover {
     background-color: #111; 
 }
 
-#sect1 {
-    display: grid;
-    grid-template-areas:
-    'vk'
-    'nm'
-    ;
+#vbox {
     grid-area: s1; 
     border: solid black 1px;
     width: 50%;
@@ -79,7 +74,7 @@ li a:hover {
     display:grid; 
     grid-template-areas: 
     'a1 a2 a3'
-    'a4 a4 a4';
+    ;
     display: flex;
     justify-content: space-around;
     
@@ -114,9 +109,38 @@ li a:hover {
 }
 
 #vk {
-    grid-area: vk;
+    
+    height: 8%;
+    margin-top: 20px;
 }
 
 #namn {
-    grid-area: nm; 
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+footer {
+    border:solid black 1px; 
+    display: grid;
+    grid-template-areas: 
+    'f1 f2';
+    display: flex; 
+    justify-content: space-between; 
+    
+
+}
+
+
+#foot1 {
+    grid-area: f1;
+    border: solid black 1px;
+}
+
+#foot2 {
+    grid-area: f2;
+    display: flex; 
+    border: solid black 1px; 
 }
