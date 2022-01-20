@@ -10,7 +10,7 @@
     'nv nv'
     'mn mn'
     's2 s2'
-    
+    'ff ff'
     ;
 }
 
@@ -38,7 +38,7 @@ ul {
     padding: 0;
     overflow: hidden; 
     background-color: #333; 
-    height: 25%;
+    height: 30%;
 }
 
 li {
@@ -123,13 +123,14 @@ li a:hover {
 }
 
 footer {
+    grid-area: ff;
     border:solid black 1px; 
     display: grid;
     grid-template-areas: 
     'f1 f2';
     display: flex; 
     justify-content: space-between; 
-    
+    height: 20vh;
 
 }
 
@@ -137,10 +138,15 @@ footer {
 #foot1 {
     grid-area: f1;
     border: solid black 1px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 #foot2 {
     grid-area: f2;
-    display: flex; 
     border: solid black 1px; 
+    width: 50%;
+    display: flex;
+    justify-content: center; 
 }
